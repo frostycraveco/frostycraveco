@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	}
+
+body {
+	background-color: powderblue;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 65%;		}
+
+header {
+	font-size: 30px;
+	padding: 25px;	}
+
+small {
+	font-size: 50%;	}
+
+.topnav {
+	overflow: hidden;
+	background-color: blue;
+	padding: 10px;
+	font-size: 30px;	}
+
+.topnav a {
+	background-color: green;
+	color: red;
+	padding: 14px 16px;
+	text-decoration: none;		}
+
+a:hover {
+	background-color: black;
+	color: white;	}
+
+p {
+	font-size: 25px;
+	margin: 5px;	} 
+
+
+footer {
+	border-top: solid;
+	border-width: 3px;
+	border-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;	
+	}
+
+
