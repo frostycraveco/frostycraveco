@@ -4,14 +4,14 @@
 	padding: 0;	}
 
 body {
-	background-color: rgba(146,198,208,255);
+	background-color: 146, 196, 208;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 65%;		}
 
 header {
-	color: rgba(0,26,44,255);
+	color: rgb(0,26,44,255);
 	font-size: 30px;
 	padding: 25px;	}
 
