@@ -3,49 +3,155 @@
 	margin: 0;
 	padding: 0;	}
 
-body {
-	background-color: 146, 196, 208;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 65%;		}
+html, body {
+    height: 100%;
+    min-width: 700px;
+    min-height: auto;
+    overflow: auto;
+}
 
-header {
-	color: 0, 34, 51;
-	font-size: 30px;
-	padding: 25px;	}
+	body {
+    <!-- rgba(148,200,210,255); -->
+    background-color: rgba(234,230,225,255);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+	flex: 1;
+}
+
+logo {
+    width: 40%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    text-align: center;
+  }
+}
+
 
 small {
 	font-size: 50%;	}
 
 .topnav {
-	overflow: hidden;
-	background-color: blue;
-	padding: 10px;
-	font-size: 30px;	}
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    overflow: hidden;
+    background-color: rgba(148,198,208,255);
+    font-size: 35px;
+    text-align: right;
+    min-width: 700px;   
+}
 
 .topnav a {
-	background-color: green;
-	color: red;
-	padding: 14px 16px;
-	text-decoration: none;		}
+	background-color: transparent;
+	color: rgba(0,29,47,255);
+	padding: 0.5% 1% 0.5% 1%;
+	margin: 2%;
+	text-decoration: none;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 a:hover {
-	background-color: black;
-	color: white;	}
+	background-color: rgba(250,247,240,255);
+}
+
+section {
+    height: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: row;	
+}
+toprow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.shavedIce {
+    float: left;
+    padding: 5% 0% 5% 10%;
+    width: 45%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tapahtumat {
+    float: right;
+    padding: 5% 15% 5% 0%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block
+}
+
+.tapahtumat a {
+    background-color: transparent;
+    color: rgba(0,29,47,255);
+    padding: 5% 10% 5% 10%;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tapahtumat a:hover {
+	background-color: rgba(148,198,208,255);
+}
+
+.text {
+	display: block;
+	width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block
+	
+}
+
+h1 {
+	color: rgba(0,29,47,255);
+}
+
+h2 {
+    color: rgba(0,29,47,255);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+}
 
 p {
 	font-size: 25px;
-	margin: 5px;	} 
+	margin: 5px;	}
+
+button {
+	background-color: transparent;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
 
 
 footer {
+	background-color: rgba(44,149,171,255);
+	padding: 2%;
+	block-size: auto;
 	border-top: solid;
 	border-width: 3px;
 	border-color: black;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;	
-	}
+}
 
 
