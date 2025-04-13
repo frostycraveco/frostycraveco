@@ -52,9 +52,58 @@ main {
         color: rgba(0,29,47,255);
         border-radius: 10px;
     }
+
+    .maininfo {
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .shavedIce {
+        margin-left: auto;
+        width: 50%;
+        max-width: 1400px;
+        padding: 0% 0% 0% 0%;
+    }
+
+    .tapahtumat {
+        margin-right: auto;
+        width: 50%;
+        max-width: 1400px;
+        padding: 2% 0% 0% 0%;
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+    .tapahtumat p {
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 0% 14% 0% 14%;
+    }
+
+    p {
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    .text {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 1% 0% 1% 0%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 }
 
 @media (max-width: 1300px) {
+
+    * {
+        overflow: hidden;
+    }
 
     .topnav {
         flex-direction: column;
@@ -88,13 +137,14 @@ main {
     }
 
     .dropbtn {
+        padding: 25px 150px 25px 150px;
         background-color: rgba(44,149,171,255);
         color: rgba(250,247,240,255);
         border-radius: 10px;
-        padding: 20px 250px 20px 250px; 
         font-size: 25px;
         border: none;
         cursor: pointer;
+
     }
 
     .phone-nav-content {
@@ -125,6 +175,48 @@ main {
         background-color: rgba(250,247,240,255);
         color: rgba(44,149,171,255);
     }
+
+    .maininfo {
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shavedIce {
+        width: 80%;
+        padding: 0% 0% 0% 0%;
+    }
+
+    .tapahtumat {
+        width: 80%;
+        padding: 2% 0% 0% 0%;
+        display: inline-block;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .text {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 1% 0% 1% 0%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .tapahtumat p {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 0% 14% 0% 14%;
+    }
 }
 
 .desktop-nav {
@@ -132,34 +224,6 @@ main {
     width: 100%;
 }
 
-.maininfo {
-    text-align: center;
-    align-items: center;
-    flex: 1;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.shavedIce {
-    margin-left: auto;
-    width: 50%;
-    max-width: 1400px;
-    padding: 0% 0% 0% 0%;
-
-}
-
-.tapahtumat {
-    margin-right: auto;
-    width: 50%;
-    max-width: 1400px;
-    padding: 2% 0% 0% 0%;
-    display: block;
-    flex-direction: column;
-    text-align: center;
-
-}
 
 .myyntivaunu {
     height: 75%;
@@ -167,11 +231,7 @@ main {
     border-radius: 10px;
 }
 
-.tapahtumat p {
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 0% 14% 0% 14%;
-}
+
 
 .tapahtumat a {
     padding: 15px 40px 15px 40px;
@@ -184,15 +244,6 @@ main {
 
 .tapahtumat a:hover {
     background-color: rgba(148,198,208,255);
-}
-
-.text {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 1% 0% 1% 0%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
@@ -219,9 +270,7 @@ h3 {
     text-shadow: 2px 2px 5px orange, 1px 1px 5px black;
 }
 
-p {
-	font-size: 30px;
-	margin: 5px;	}
+
 
 button {
 	background-color: transparent;
