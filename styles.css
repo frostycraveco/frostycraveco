@@ -3,17 +3,8 @@
 	margin: 0;
 	padding: 0;	}
 
-html, body {
-    height: 100%;
-    min-width: 700px;
-    min-height: auto;
-    overflow: auto;
-}
-
-	body {
-    <!-- rgba(148,200,210,255); -->
-    background-color: rgba(234,230,225,255);
-    text-align: center;
+body {
+    background-color: rgba(250,247,240,255);
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -26,94 +17,182 @@ main {
 	flex: 1;
 }
 
-logo {
-    width: 40%;
-    height: auto;
+.logo {
+    display: flex;
+    background-color: rgba(44,149,171,255);
 }
 
-@media (max-width: 768px) {
-  header h1 {
+@media (min-width: 1301px) {
+    .phone-nav {
+        display: none;
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        background-color: rgba(148,198,208,255);
+        font-size: 35px;
+        border-radius: 5px;
+    }
+
+    .topnav a {
+        background-color: rgba(44,149,171,255);
+        color: rgba(250,247,240,255);
+        padding: 1.5% 2% 1.5% 2%;
+        margin: 80px 0px 0px 0px;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 10px;
+    }
+
+    a:hover {
+        background-color: rgba(250,247,240,255);
+        color: rgba(0,29,47,255);
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        background-color: rgba(148,198,208,255);
+        font-size: 35px;
+        border-radius: 5px;
+    }
+
+    .topnav a {
+        color: rgba(0,29,47,255);
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 10px;
+    }
+
+    a:hover {
+        background-color: rgba(250,247,240,255);
+        border-radius: 10px;
+    }
+
+    .maininfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .dropbtn {
+        background-color: rgba(44,149,171,255);
+        color: rgba(250,247,240,255);
+        border-radius: 10px;
+        padding: 20px 250px 20px 250px; 
+        font-size: 25px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .phone-nav-content {
+        display: none;
+        background-color: rgba(44,149,171,255);
+    }
+
+    .phone-nav-content a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 2% 4%;
+    }
+
+    .phone-nav-content a:hover {
+        background-color: rgba(250,247,240,255);
+
+    }
+
+    .phone-nav:hover .phone-nav-content {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .phone-nav:hover .dropbtn {
+        background-color: rgba(250,247,240,255);
+        color: rgba(44,149,171,255);
+    }
+}
+
+.desktop-nav {
+    margin: 0 10px;
+    width: 100%;
+}
+
+.maininfo {
     text-align: center;
-  }
-}
-
-
-small {
-	font-size: 50%;	}
-
-.topnav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    overflow: hidden;
-    background-color: rgba(148,198,208,255);
-    font-size: 35px;
-    text-align: right;
-    min-width: 700px;   
-}
-
-.topnav a {
-	background-color: transparent;
-	color: rgba(0,29,47,255);
-	padding: 0.5% 1% 0.5% 1%;
-	margin: 2%;
-	text-decoration: none;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-a:hover {
-	background-color: rgba(250,247,240,255);
-}
-
-section {
-    height: auto;
+    align-items: center;
     flex: 1;
+    width: 100%;
     display: flex;
-    flex-direction: row;	
-}
-toprow {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+    flex-direction: row;
+
 }
 
 .shavedIce {
-    float: left;
-    padding: 5% 0% 5% 10%;
-    width: 45%;
-    height: 100px;
     margin-left: auto;
-    margin-right: auto;
+    width: 50%;
+    max-width: 1400px;
+    padding: 0% 0% 0% 0%;
+
 }
 
 .tapahtumat {
-    float: right;
-    padding: 5% 15% 5% 0%;
-    margin-left: auto;
     margin-right: auto;
-    display: inline-block
+    width: 50%;
+    max-width: 1400px;
+    padding: 2% 0% 0% 0%;
+    display: block;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.myyntivaunu {
+    height: 75%;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.tapahtumat p {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0% 14% 0% 14%;
 }
 
 .tapahtumat a {
-    background-color: transparent;
+    padding: 15px 40px 15px 40px;
+    text-align: center;
     color: rgba(0,29,47,255);
-    padding: 5% 10% 5% 10%;
-    font-size: 25px;
+    font-size: 260%;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .tapahtumat a:hover {
-	background-color: rgba(148,198,208,255);
+    background-color: rgba(148,198,208,255);
 }
 
 .text {
-	display: block;
-	width: 65%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    display: inline-block
-	
+    text-align: center;
+    padding: 1% 0% 1% 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
@@ -121,37 +200,43 @@ h1 {
 }
 
 h2 {
-    color: rgba(0,29,47,255);
+    color: white;
     font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
+    -webkit-text-stroke: 3px rgba(44,149,171,255);
+    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px -1px 5px black;
+    text-shadow: -1px 1px 5px black;
+    text-shadow: -1px -1px px black;
+}
+
+h3 {
+    color: rgba(44,149,171,255);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    text-shadow: 2px 2px 5px orange, 1px 1px 5px black;
 }
 
 p {
-	font-size: 25px;
+	font-size: 30px;
 	margin: 5px;	}
 
 button {
 	background-color: transparent;
-	color: white;
 	border: none;
-	padding: 10px 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 20px;
-	margin: 4px 2px;
 	cursor: pointer;
+    padding: 15px; 
 }
 
-
 footer {
-	background-color: rgba(44,149,171,255);
-	padding: 2%;
-	block-size: auto;
-	border-top: solid;
-	border-width: 3px;
-	border-color: black;
+    background-color: rgba(44,149,171,255);
+    padding: 1%;
+    block-size: auto;
+    border-top: solid;
+    border-width: 3px;
+    border-color: rgba(44,149,171,255);
 }
 
 
