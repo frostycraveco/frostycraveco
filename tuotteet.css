@@ -1,0 +1,27 @@
+
+.gallery {
+    display: flex;
+    padding: 5%;
+    align-content: center;
+}
+
+.gallery:hover {
+        
+}
+
+.gallery img {
+    width: 1500px;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.valikoima {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
