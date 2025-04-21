@@ -116,7 +116,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        padding: 1% 0% 1% 0%;
+        padding: 5% 0% 10% 0%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
@@ -135,7 +135,7 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0 1% 3% 0;
+        padding: 0 1% 10% 0;
         max-width: 2000px;
     }
     .me img {
@@ -150,6 +150,7 @@ footer {
     .yhteystiedot {
         margin: auto;
         margin-top: 2%;
+        margin-bottom: 10%;
         display: flex;
         flex-direction: row;
         width: 80%;
@@ -185,12 +186,30 @@ footer {
         margin-right: 10%;
     }
 
+    footer {
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+
+    
+    footer p {
+        margin: 5px;
+        font-size: 18px;
+
+    }
+
     .footer-content-left {
         margin-left: 10%;
     }
 
     .footer-content-right {
         margin-right: 10%;
+    }
+
+    .insta-img {
+        width: 100px; 
+        height: 100px;
+    
     }
 }
 
@@ -400,13 +419,20 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 3%;
-        padding-bottom: 1%;
+        padding-top: 5%;
+        padding-bottom: 2%;
     }
 
     footer p {
         padding: 1.5%;
+        font-size: 12px;
+        margin: 5px;
     }
+
+    footer a {
+        font-size: 12px;
+    }
+    
 
     .footer-content-left {
         margin-left: 5%;
@@ -414,6 +440,12 @@ footer {
 
     .footer-content-right {
         margin-right: 5%;
+    }
+
+    .insta-img {
+        width: 80px; 
+        height: 80px;
+    
     }
 }
 
@@ -473,7 +505,7 @@ h4 {
 font-size: 30px;
 }
 
-button {
+.tapahtumat button {
 background-color: transparent;
 border: none;
 cursor: pointer;
@@ -533,6 +565,29 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: rgba(148, 198, 208, 255);
+}
+
+.yhteystiedot a {
+    background-color: rgba(148, 198, 208, 255);
+    padding: 40px;
+    font-size: 25px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 29, 47, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+.yhteystiedot p {
+    font-size: 20px;
+    margin: 5px;
+    padding: 0 0 0 0;
+}
+
+.yhteystiedot a:hover {
+    background-color: rgba(44, 149, 171, 255);
+    color: rgba(250, 247, 240, 255);
 }
 
 /* Clear floats after the columns */
@@ -636,14 +691,8 @@ footer a:hover {
     justify-content: center;
     color: rgba(250, 247, 240, 255);
     text-align: center;
-    padding: 3px 0;
 }
 
-footer p {
-    margin: 2px;
-    font-size: 18px;
-
-}
 
 .footer-content-right {
     display: flex;
@@ -652,11 +701,7 @@ footer p {
     text-align: right;
 }
 
-.insta-img {
-    width: 100px; 
-    height: 100px;
 
-}
 
 /* Change color on hover */
 .footer-content-right a:hover {
