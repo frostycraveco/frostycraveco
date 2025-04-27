@@ -11,6 +11,7 @@
     <meta name="robots" content="index, follow"> <!-- Varmistaa, että Google indeksoi sivusi -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacts.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
     <title>Yhteystiedot</title>
 </head>
@@ -22,7 +23,7 @@
             <!--NAVIGOINTIPALKKI-->
             <nav class="topnav">
                 <div class="logo">
-                    <img src="textlogo.png" alt="Frosty Crave Co." width="320" height="250">
+                    <a href="index.html"><img src="textlogo.png" alt="Frosty Crave Co." width="320" height="250"></a>
                 </div>
 
                 <div class="desktop-nav">
@@ -34,7 +35,7 @@
                 </div>
 
                 <div class="phone-nav">
-                    <button class="dropbtn">Dropdown</button>
+                    <button class="dropbtn">Valikko</button>
                     <div class="phone-nav-content">
                         <a href="index.html">Etusivu</a>
                         <a href="events.html">Tapahtumat</a>
@@ -43,7 +44,6 @@
                         <a href="contacts.html">Yhteystiedot</a>
                     </div>
                 </div>
-
             </nav>
         </header>
 
@@ -52,8 +52,8 @@
             <div class="yhteystiedot-teksti">
                 <h1 style="margin-bottom: 5%;">Yhteystiedot</h1>
 
-                <a href="mailto:frostycraveco@gmail.com" target="frostycraveco@gmail.com"><p>Sähköposti</p>frostycraveco@gmail.com</a>
-                <a><b>Asiakaspalvelu: </b>+358 443061996</a>
+                <a href="mailto:frostycraveco@gmail.com" target="frostycraveco@gmail.com"><b>Sähköposti</b><p>frostycraveco@gmail.com</p></a>
+                <a><b>Asiakaspalvelu: </b><p>+358 443061996</p></a>
             </div>
 
             <div class="palauteboksi">
@@ -71,6 +71,11 @@
                     </div>
                     <div class="row">
                         <div class="col-75">
+                            <input type="text" id="puh" name="number" placeholder="Puhelin numero">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75">
                             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                         </div>
                     </div>
@@ -84,8 +89,6 @@
 
 
     </main>
-
-
 
     <!--SIVUSTON ALALUETTELO-->
     <footer>

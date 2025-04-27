@@ -1,0 +1,77 @@
+﻿
+.eventspage {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 10% 0 10%;
+    margin-bottom: 5%;
+}
+
+.kuukausi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 95%;
+    gap: 5px; /* Adds spacing between elements */
+}
+
+.events {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    min-width: max-content;
+    max-width: min-content;
+    transition: transform 0.5s ease; /* Smoothly adjusts size of surrounding blocks */
+}
+
+ .events img {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.events img:hover {
+    transform: scale(1.15); /* Enlarges the image by 15% while keeping it centered */
+}
+
+.events p {
+    display: block;
+    font-size: 20px;
+    max-width: 350px;
+    margin: auto;
+}
+
+.events b {
+    font-size: 30px;
+}
+
+.events br {
+    display: block;
+    content: " ";
+    margin: 5px 0;
+}
+
+@media (min-width: 1301px) {
+
+
+}
+
+@media (max-width: 1300px) {
+
+    .eventspage {
+        align-items: center;
+        padding: 1% 5% 0 5%;
+    }
+
+    .kuukausi {
+        margin: auto;
+    }
+
+    .events {
+        display: block;
+        margin: auto;
+    }
+}

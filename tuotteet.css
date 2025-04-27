@@ -1,54 +1,60 @@
-.valikoima {
-    display: flex;
-    flex-direction: column;
-    margin:2% 10% 5% 10%;
-}
 
-.gallery {
-    position: relative;
-    display: flex;
-    align-content: center;
-    width: 100%;
-    margin: 2% auto 1% auto;
-    height: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: black 0.6;
-    transition: height 0.5s ease;
-}
+    .valikoima {
+        display: flex;
+        flex-direction: column;
+        margin: 2% 10% 5% 10%;
+    }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    z-index: -1;
-    border-radius: 10px;
-    object-fit: cover;
-    filter: brightness(70%)
-    
-}
+@media (max-width: 1300px) {
+    .valikoima {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;    }
+    }
 
-.teksi-more {
-    position: absolute;
-    top: 30%;
-    display: none;
-}
+    .gallery {
+        position: relative;
+        display: flex;
+        align-content: center;
+        width: 100%;
+        margin: 2% auto 1% auto;
+        height: 200px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: black 0.6;
+        transition: height 0.5s ease;
+    }
 
-.tuoteTeksti {
-    position: absolute;
-    top: 20%;
-    left: 2.5%;
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    z-index: 1;
-}
+    .gallery img {
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        border-radius: 10px;
+        object-fit: cover;
+        filter: brightness(70%)
+    }
 
-.gallery:hover {
-    height: 300px;
-    transition: height 0.5s ease;
+    .teksi-more {
+        position: absolute;
+        top: 30%;
+        display: none;
+    }
 
-}
+    .tuoteTeksti {
+        position: absolute;
+        top: 20%;
+        left: 2.5%;
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        z-index: 1;
+    }
 
-.gallery:hover .teksi-more {
-    width: 100%;
-    display: block;
-}
+    .gallery:hover {
+        height: 300px;
+        transition: height 0.5s ease;
+    }
+
+        .gallery:hover .teksi-more {
+            width: 100%;
+            display: block;
+        }

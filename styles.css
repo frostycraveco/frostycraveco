@@ -20,14 +20,22 @@ main {
 
 .logo {
     display: flex;
-    background-color: rgba(44, 149, 171, 255);
+    cursor: pointer;
+}
+
+.logo a {
+    all: unset !important;
+}
+
+.logo a:hover {
+    all: unset !important;
+    cursor: pointer;
 }
 
 .desktop-nav {
     margin: 0 10px;
     width: 100%;
 }
-
 
 footer {
     background-color: rgba(44, 149, 171, 255);
@@ -90,7 +98,7 @@ footer {
         padding: 0% 0% 0% 0%;
     }
 
-    .tapahtumat {
+    .events-frontpage {
         margin-right: auto;
         width: 50%;
         max-width: 1400px;
@@ -100,7 +108,7 @@ footer {
         text-align: center;
     }
 
-    .tapahtumat p {
+    .events-frontpage p {
         font-size: 30px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding: 0% 14% 0% 14%;
@@ -120,17 +128,6 @@ footer {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
-    .tapahtuma {
-
-        width: 25%;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        min-width: max-content;
-        max-width: min-content;
-        margin: 1%;
-    }
-
     .me {
         display: flex;
         flex-direction: row;
@@ -147,51 +144,13 @@ footer {
         border-radius: 10px;
     }
 
-    .yhteystiedot {
-        margin: auto;
-        margin-top: 2%;
-        margin-bottom: 10%;
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-    }
-    
-    .yhteystiedot-teksti {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-    }
 
-
-    .palauteboksi {
-        width: 40%;
-        margin: auto;
-        margin: auto;
-    }
-
-    .palauteboksi p {
-        font-size: 20px;
-        margin: 25px 5px 15px 5px;
-        max-width: 90%;
-    }
-    
-    .col-75 {
-        float: left;
-        width: 75%;
-        margin-top: 6px;
-    }
-
-    input[type=submit] {
-        float: right;
-        margin-right: 10%;
-    }
 
     footer {
         padding-top: 5%;
         padding-bottom: 2%;
     }
 
-    
     footer p {
         margin: 5px;
         font-size: 18px;
@@ -218,7 +177,6 @@ footer {
 /*#region PHONE PAGE SETUP */
 
 @media (max-width: 1300px) {
-
 
     .topnav {
         flex-direction: column;
@@ -259,6 +217,7 @@ footer {
         font-size: 25px;
         border: none;
         cursor: pointer;
+        margin-bottom: 1%;
     }
 
     .phone-nav-content {
@@ -303,7 +262,7 @@ footer {
         padding: 0% 0% 0% 0%;
     }
 
-    .tapahtumat {
+    .events-frontpage {
         width: 80%;
         padding: 2% 0% 0% 0%;
         display: inline-block;
@@ -326,24 +285,10 @@ footer {
         margin-bottom: 5%;
     }
 
-    .tapahtumat p {
+    .events-frontpage p {
         font-size: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding: 0% 14% 0% 14%;
-    }
-
-    .tapahtumatpage {
-        align-items: center;
-        padding: 1% 5% 0 5%;
-    }
-
-    .kuukausi {
-        margin: auto;
-    }
-
-    .tapahtuma {
-        display: block;
-        margin: auto;
     }
 
     .kuva {
@@ -361,60 +306,13 @@ footer {
     .me img {
         display: block;
         margin: auto;
-        width: 600px;
-        height: 500px;
+        width: 450px;
+        height: 350px;
         border-radius: 10px;
         margin-top: 3%;
         margin-bottom: 5%;
     }
 
-
-    .yhteystiedot {
-        margin: auto;
-        margin-top: 2%;
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        align-content: center;
-        margin-bottom: 5%;
-    }
-
-
-    .yhteystiedot-teksti {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: auto;
-    }
-
-    .yhteystiedot-teksti p {
-
-        font-size: 25px;
-    }
-
-    .palauteboksi {
-        width: 80%;
-        margin: auto;
-        padding: 20px;
-    }
-
-    .palauteboksi p {
-        text-align: center;
-        font-size: 25px;
-        margin: 25px 5px 15px 5px;
-        max-width: 90%;
-    }
-
-    .col-75 {
-        width: 80%;
-        margin-top: 6px;
-    }
-
-    input[type=submit] {
-        display: block;
-        margin: auto;
-    }
-    
     footer {
         display: flex;
         flex-direction: column;
@@ -433,7 +331,6 @@ footer {
         font-size: 12px;
     }
     
-
     .footer-content-left {
         margin-left: 5%;
     }
@@ -459,7 +356,7 @@ footer {
     border-radius: 10px;
 }
 
-.tapahtumat a {
+.events-frontpage a {
     padding: 15px 40px 15px 40px;
     text-align: center;
     color: rgba(0, 29, 47, 255);
@@ -468,7 +365,7 @@ footer {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.tapahtumat a:hover {
+.events-frontpage a:hover {
     background-color: rgba(148, 198, 208, 255);
 }
 
@@ -505,11 +402,11 @@ h4 {
 font-size: 30px;
 }
 
-.tapahtumat button {
+.events-frontpage button {
 background-color: transparent;
 border: none;
 cursor: pointer;
-padding: 1px;
+padding: 10px 0 0;
 }
 
 /* #endregion */
@@ -534,121 +431,6 @@ padding: 1px;
     border-color: red;
 }
 
-
-/*#endregion */
-
-/*#region YHTEYSTIEDOT PAGE LAYOT */
-
-.yhteystiedot-teksti p {
-    margin-top: 3%;
-    padding-bottom: 1%;
-}
-
-input[type=text],
-select,
-textarea {
-    width: 120%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: rgba(44, 149, 171, 255);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: rgba(148, 198, 208, 255);
-}
-
-.yhteystiedot a {
-    background-color: rgba(148, 198, 208, 255);
-    padding: 40px;
-    font-size: 25px;
-    margin-bottom: 2px;
-    border-radius: 5px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    color: rgba(0, 29, 47, 255);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-
-.yhteystiedot p {
-    font-size: 20px;
-    margin: 5px;
-    padding: 0 0 0 0;
-}
-
-.yhteystiedot a:hover {
-    background-color: rgba(44, 149, 171, 255);
-    color: rgba(250, 247, 240, 255);
-}
-
-/* Clear floats after the columns */
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/*#endregion */
-
-/*#region TAPAHTUMAT PAGE LAYOUT */
-
-
-.tapahtumatpage {
-    display: flex;
-    flex-direction: column;
-    padding: 1% 5% 0 5%;
-    margin-bottom: 5%;
-}
-
-.kuukausi {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 90%;
-}
-
-
-
-.tapahtuma img {
-    display: block;
-    margin: auto;
-    width: 350px;
-    height: 350px;
-}
-
-.tapahtuma i {
-    display: block;
-    margin: auto;
-    margin-bottom: 5px;
-    font-size: 15px;
-}
-
-.tapahtuma p {
-    display: block;
-    font-size: 20px;
-    max-width: 350px;
-    margin: auto;
-}
-
-.tapahtuma b {
-    font-size: 30px;
-}
-
-.tapahtuma br {
-    display: block;
-    content: " ";
-    margin: 5px 0;
-}
 
 /*#endregion */
 
@@ -701,9 +483,10 @@ footer a:hover {
     text-align: right;
 }
 
-
+    /*#endregion */
 
 /* Change color on hover */
 .footer-content-right a:hover {
     background-color: rgba(148, 198, 208, 255);
 }
+
