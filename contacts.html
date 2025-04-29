@@ -58,33 +58,73 @@
 
             <div class="palauteboksi">
                 <p>Voit olla meihin yhteydessä matalalla kynnyksellä suoraan tästä:</p>
-                <form action="index.html">
-                    <div class="row">
-                        <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Nimi">
+                <f action="service_eddbjbg">
+
+                    <form id="contact-form">
+                        <div class="row">
+                            <div class="col-75">
+                                <input type="text" id="name" name="name" required placeholder="Nimi...">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-75">
-                            <input type="text" id="aihe" name="subject" placeholder="Aihe">
+                        <div class="row">
+                            <div class="col-75">
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]+" required placeholder="Puhelinnumero...">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-75">
-                            <input type="text" id="puh" name="number" placeholder="Puhelin numero">
+                        <div class="row">
+                            <div class="col-75">
+                                <input type="email" id="email" name="mail" required placeholder="Sähköposti...">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-75">
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <div class="row">
+                            <div class="col-75">
+                                <input type="text" id="subject" name="title" required placeholder="Aihe...">
+                            </div>
                         </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>
+                        <div class="row">
+                            <div class="col-75">
+                                <textarea id="message" name="message" rows="5" required placeholder="Voit kirjoittaa asiasi tähän..."></textarea>
+                            </div>
+                        </div>
+                        <div class="status-message" id="status"></div>
+                        <input type="hidden" id="contact-time" name="contact_time">
+
+                        <div class="row">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+
+                    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                    <script>
+                        (function () {
+                            emailjs.init('3aG6Te2D_CsBIZdAJ'); // <-- Vaihda tähän oma PUBLIC KEY
+                        })();
+
+                        document.getElementById('contact-form').addEventListener('submit', function (event) {
+                            event.preventDefault();
+
+                            // Asetetaan nykyinen päivämäärä ja aika piilotettuun kenttään
+                            const contactTimeField = document.getElementById('contact-time');
+                            const now = new Date();
+                            contactTimeField.value = now.toLocaleString('fi-FI'); // Muoto: "29.4.2025 klo 14:30"
+
+                            const statusMessage = document.getElementById('status');
+                            statusMessage.style.color = '#333';
+                            statusMessage.textContent = 'Lähetetään viestiä...';
+
+                            emailjs.sendForm('service_uwbijba', 'template_nptx86a', this)
+                                .then(function () {
+                                    statusMessage.style.color = 'green';
+                                    statusMessage.textContent = 'Viestisi on lähetetty onnistuneesti!';
+                                    document.getElementById('contact-form').reset();
+                                }, function (error) {
+                                    statusMessage.style.color = 'red';
+                                    statusMessage.textContent = 'Viestin lähetys epäonnistui. Yritä myöhemmin uudelleen.';
+                                    console.error('FAILED...', error);
+                                });
+                        });
+                    </script>
+</div>
         </div>
 
 
