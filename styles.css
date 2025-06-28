@@ -128,24 +128,6 @@ footer {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
-    .me {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0 1% 10% 0;
-        max-width: 2000px;
-    }
-    .me img {
-        display: block;
-        justify-content: start;    
-        margin-left: 50px;
-        width: 600px;
-        height: 500px;
-        border-radius: 10px;
-    }
-
-
-
     footer {
         padding-top: 5%;
         padding-bottom: 2%;
@@ -295,24 +277,6 @@ footer {
         text-align: center;
     }
 
-    .me {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 1% 0 0;
-        max-width: 2000px;
-    }
-
-    .me img {
-        display: block;
-        margin: auto;
-        width: 380px;
-        height: 300px;
-        border-radius: 10px;
-        margin-top: 3%;
-        margin-bottom: 5%;
-    }
-
     footer {
         display: flex;
         flex-direction: column;
@@ -410,29 +374,6 @@ padding: 10px 0 0;
 }
 
 /* #endregion */
-
-/*#region MEISTÄ PAGE CSS STYLES AND LAYOUT */
-
-.me p {
-    font-size: 25px;
-}
-
-.me br {
-    display: block;
-    content: " ";
-    margin: 15px 0;
-}
-
-.kokotarina {
-    width: 80%;
-    margin: auto;
-    margin-top: 2%;
-    align-content: center;
-    border-color: red;
-}
-
-
-/*#endregion */
 
 /*#region FOOTER PAGE LAYOUT */
 

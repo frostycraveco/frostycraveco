@@ -25,13 +25,15 @@
     transition: transform 0.5s ease; /* Smoothly adjusts size of surrounding blocks */
 }
 
- .events img {
-    display: block;
-    margin: auto;
-    width: 350px;
-    height: 350px;
-    transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
-}
+    .events img {
+        display: block;
+        object-fit: cover;
+        margin: auto;
+        width: 350px;
+        height: 350px;
+        transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+        border-radius: 10px; /* Adds rounded corners to the images */
+    }
 
 .events img:hover {
     transform: scale(1.15); /* Enlarges the image by 15% while keeping it centered */
