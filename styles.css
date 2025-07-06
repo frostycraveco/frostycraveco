@@ -49,7 +49,6 @@ footer {
 
 /*#endregion */
 
-/*#region DESKTOP PAGE SETUP */
 
 @media (min-width: 1301px) {
     .phone-nav {
@@ -153,10 +152,6 @@ footer {
     
     }
 }
-
-/*#endregion */
-
-/*#region PHONE PAGE SETUP */
 
 @media (max-width: 1300px) {
 
@@ -309,8 +304,6 @@ footer {
     
     }
 }
-
-/*#endregion */
 
 /*#region ETUSIVU PAGE LAYOUT */
 

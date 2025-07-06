@@ -1,16 +1,42 @@
 
-    .valikoima {
-        display: flex;
-        flex-direction: column;
-        margin: 2% 10% 5% 10%;
-    }
+.valikoima {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 12%
+}
+
+h1 {
+    margin-bottom: 0.5%;
+}
+
+p {
+    margin-bottom: 1.5%;
+}
 
 @media (max-width: 1300px) {
     .valikoima {
         flex-direction: column;
         justify-content: center;
-        text-align: center;    }
+        text-align: center;
+        margin: 2% 2% !important;
     }
+
+    .gallery {
+         height: 100px !important;
+    }
+    .gallery:hover {
+        height: 150px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+        margin-bottom: 2% !important;
+    }
+
+    h1 {
+        margin-bottom: 3% !important;        
+    }
+}
 
     .gallery {
         position: relative;

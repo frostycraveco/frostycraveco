@@ -2,7 +2,7 @@
 .eventspage {
     display: flex;
     flex-direction: column;
-    padding: 2% 10% 0 10%;
+    padding: 2% 12% 0 12%;
     margin-bottom: 5%;
 }
 
@@ -25,18 +25,22 @@
     transition: transform 0.5s ease; /* Smoothly adjusts size of surrounding blocks */
 }
 
-    .events img {
-        display: block;
-        object-fit: cover;
-        margin: auto;
-        width: 350px;
-        height: 350px;
-        transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
-        border-radius: 10px; /* Adds rounded corners to the images */
-    }
+.events img {
+    display: block;
+    object-fit: cover;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+    border-radius: 10px; /* Adds rounded corners to the images */
+}
 
 .events img:hover {
     transform: scale(1.15); /* Enlarges the image by 15% while keeping it centered */
+}
+
+.eventspage h1 {
+    margin-bottom: 1%;
 }
 
 .events p {
@@ -56,16 +60,11 @@
     margin: 5px 0;
 }
 
-@media (min-width: 1301px) {
-
-
-}
-
 @media (max-width: 1300px) {
 
     .eventspage {
         align-items: center;
-        padding: 1% 5% 0 5%;
+        text-align: center;
     }
 
     .kuukausi {
@@ -75,5 +74,9 @@
     .events {
         display: block;
         margin: auto;
+    }
+
+    .eventspage p {
+        font-size: 20px !important;
     }
 }
