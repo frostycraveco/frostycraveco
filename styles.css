@@ -46,6 +46,41 @@ footer {
     border-color: rgba(44, 149, 171, 255);
 }
 
+h1 {
+    color: rgba(0, 29, 47, 255);
+    font-size: 50px;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    -webkit-text-stroke: 3px rgba(44, 149, 171, 255);
+    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px -1px 5px black;
+    text-shadow: -1px 1px 5px black;
+    text-shadow: -1px -1px 5px black;
+}
+
+h3 {
+    color: rgba(44, 149, 171, 255);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    text-shadow: 2px 2px 5px orange, 1px 1px 5px black;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.events-frontpage button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0 0;
+}
 
 /*#endregion */
 
@@ -81,28 +116,34 @@ footer {
         border-radius: 10px;
     }
 
-    .maininfo {
-        text-align: center;
-        align-items: center;
-        flex: 1;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
+    .hero {
+        position: relative;
+        width: 100vw;
+        max-width: 100%;
+        height: 450px; /* sama kuin hero img */
+        background-image: url(hero.jpg);
+        background-size: cover;
+        background-position: center;
+        filter: brightness(110%);
     }
 
-    .shavedIce {
-        margin-left: auto;
-        width: 50%;
-        max-width: 1400px;
-        padding: 0% 0% 0% 0%;
+    .hero-teksti {
+        text-align: center;
+        top: 50%;
+        left: 0;
+        font-size: 40px;
+        color: rgba(250, 247, 240, 255);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 2px 2px 5px black, 1px 1px 5px black;
     }
+}
+
+
 
     .events-frontpage {
-        margin-right: auto;
-        width: 50%;
-        max-width: 1400px;
+        height: 250px;
         padding: 2% 0% 0% 0%;
-        display: block;
+        display: flex;
         flex-direction: column;
         text-align: center;
     }
@@ -177,11 +218,6 @@ footer {
         border-radius: 10px;
     }
 
-    .maininfo {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .desktop-nav {
         display: none;
     }
@@ -225,23 +261,27 @@ footer {
         color: rgba(44, 149, 171, 255);
     }
 
-    .maininfo {
-        text-align: center;
-        align-items: center;
-        flex: 1;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    .hero {
+        position: relative;
+        width: 100vw;
+        max-width: 100%;
+        height: 450px; /* sama kuin hero img */
+        background-image: url(hero.jpg);
+        background-size: cover;
+        background-position: center;
     }
 
-    .shavedIce {
-        width: 80%;
-        padding: 0% 0% 0% 0%;
+    .hero h2 {
+        text-align: center;
+        font-size: 40px;
+        color: rgba(250, 247, 240, 255);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: solid;
     }
 
     .events-frontpage {
-        width: 80%;
-        padding: 2% 0% 0% 0%;
+        align-items: center;
+        margin: auto;
         display: inline-block;
         flex-direction: column;
         text-align: center;
@@ -306,13 +346,6 @@ footer {
 }
 
 /*#region ETUSIVU PAGE LAYOUT */
-
-.myyntivaunu {
-    height: 75%;
-    width: 70%;
-    border-radius: 10px;
-}
-
 .events-frontpage a {
     padding: 15px 40px 15px 40px;
     text-align: center;
@@ -327,46 +360,6 @@ footer {
 }
 
 /*#endregion */
-
-/*#region TEKSTIT, TYYLIT, NAPPULAT JA MUUT */
-
-h1 {
-color: rgba(0, 29, 47, 255);
-font-size: 50px;
-}
-
-h2 {
-color: white;
-font-size: 50px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-padding: 20px;
--webkit-text-stroke: 3px rgba(44, 149, 171, 255);
-text-shadow: 1px 1px 5px black;
-text-shadow: 1px -1px 5px black;
-text-shadow: -1px 1px 5px black;
-text-shadow: -1px -1px 5px black;
-}
-
-h3 {
-color: rgba(44, 149, 171, 255);
-font-size: 50px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-padding: 20px;
-text-shadow: 2px 2px 5px orange, 1px 1px 5px black;
-}
-
-h4 {
-font-size: 30px;
-}
-
-.events-frontpage button {
-background-color: transparent;
-border: none;
-cursor: pointer;
-padding: 10px 0 0;
-}
-
-/* #endregion */
 
 /*#region FOOTER PAGE LAYOUT */
 
@@ -417,10 +410,11 @@ footer a:hover {
     text-align: right;
 }
 
-    /*#endregion */
 
 /* Change color on hover */
 .footer-content-right a:hover {
     background-color: rgba(148, 198, 208, 255);
 }
+
+/*#endregion */
 

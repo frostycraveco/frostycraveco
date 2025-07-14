@@ -27,6 +27,12 @@
 
     .me p {
         font-size: 20px !important;
+        text-align: justify !important;
+    }
+
+    .kokotarina h1 {
+        margin-bottom: 3% !important;
+
     }
 }
 

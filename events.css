@@ -78,5 +78,11 @@
 
     .eventspage p {
         font-size: 20px !important;
+        line-height: 1.5 !important;
+        text-align: justify !important;
+    }
+
+    .eventspage h1 {
+        margin-bottom: 3% !important;
     }
 }
