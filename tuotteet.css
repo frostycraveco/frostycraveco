@@ -2,15 +2,7 @@
 .valikoima {
     display: flex;
     flex-direction: column;
-    margin: 2% 12%
-}
-
-h1 {
-    margin-bottom: 0.5%;
-}
-
-p {
-    margin-bottom: 1.5%;
+    margin: 2% 15% 4% 15%;
 }
 
 @media (max-width: 1300px) {
@@ -18,7 +10,7 @@ p {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin: 2% 2% !important;
+        margin: 2% 4% 7% 4% !important;
     }
 
     .gallery {
@@ -38,49 +30,53 @@ p {
     }
 }
 
-    .gallery {
-        position: relative;
-        display: flex;
-        align-content: center;
-        width: 100%;
-        margin: 1% auto 0.5% auto;
-        height: 150px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        color: black 0.6;
-        transition: height 0.5s ease;
-    }
+.gallery {
+    position: relative;
+    display: flex;
+    align-content: center;
+    width: 100%;
+    margin: 1% auto 0.5% auto;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    transition: height 0.5s ease;
+}
 
-    .gallery img {
-        width: 100%;
-        height: auto;
-        z-index: -1;
-        border-radius: 10px;
-        object-fit: cover;
-        filter: brightness(70%)
-    }
+.gallery img {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: brightness(70%)
+}
 
-    .teksi-more {
-        position: absolute;
-        top: 30%;
-        display: none;
-    }
+.teksi-more {
+    position: absolute;
+    top: 30%;
+    display: none;
+}
 
-    .tuoteTeksti {
-        position: absolute;
-        top: 20%;
-        left: 2.5%;
-        color: white;
-        font-size: 1.5em;
-        font-weight: bold;
-        z-index: 1;
-    }
+.tuoteTeksti {
+    position: absolute;
+    top: 20%;
+    left: 2.5%;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 1;
+}
 
-    .gallery:hover {
-        height: 200px;
-        transition: height 0.5s ease;
-    }
+.gallery:hover {
+    height: 200px;
+    transition: height 0.5s ease;
+}
 
-    .gallery:hover .teksi-more {
-        width: 100%;
-        display: block;
-    }
+.gallery:hover .teksi-more {
+    width: 100%;
+    display: block;
+}
+
+p {
+    margin-bottom: 1.5%;
+}

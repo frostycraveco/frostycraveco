@@ -37,24 +37,17 @@ main {
     width: 100%;
 }
 
-footer {
-    background-color: rgba(44, 149, 171, 255);
-    padding: 1%;
-    block-size: auto;
-    border-top: solid;
-    border-width: 3px;
-    border-color: rgba(44, 149, 171, 255);
-}
-
 h1 {
     color: rgba(0, 29, 47, 255);
     font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px !important;
 }
 
 h2 {
     color: white;
     font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 20px;
     -webkit-text-stroke: 3px rgba(44, 149, 171, 255);
     text-shadow: 1px 1px 5px black;
@@ -64,30 +57,53 @@ h2 {
 }
 
 h3 {
-    color: rgba(44, 149, 171, 255);
-    font-size: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
-    text-shadow: 2px 2px 5px orange, 1px 1px 5px black;
+    color: rgba(250, 247, 240, 255);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-h4 {
+h5 {
     font-size: 30px;
 }
 
-.events-frontpage button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 10px 0 0;
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.events-frontpage {
+    height: 350px;
+    padding: 2% 0% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.events-frontpage a {
+    padding: 15px 40px 15px 40px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(0, 29, 47, 255);
+    font-size: 260%;
+    text-decoration: none;
+}
+
+.events-frontpage a:hover {
+    background-color: rgba(148, 198, 208, 255);
+}
+
+.topnav {
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: rgba(44, 149, 171, 255);
 }
 
 /*#endregion */
 
-
 @media (min-width: 1301px) {
-    .phone-nav {
-        display: none;
+    .phone-nav { 
+        display: none; 
     }
 
     .topnav {
@@ -114,13 +130,14 @@ h4 {
         background-color: rgba(250, 247, 240, 255);
         color: rgba(0, 29, 47, 255);
         border-radius: 10px;
+        transition: all 0.5s ease;
     }
 
     .hero {
         position: relative;
         width: 100vw;
         max-width: 100%;
-        height: 450px; /* sama kuin hero img */
+        height: 600px; /* sama kuin hero img */
         background-image: url(hero.jpg);
         background-size: cover;
         background-position: center;
@@ -129,8 +146,6 @@ h4 {
 
     .hero-teksti {
         text-align: center;
-        top: 50%;
-        left: 0;
         font-size: 40px;
         color: rgba(250, 247, 240, 255);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -138,63 +153,14 @@ h4 {
     }
 }
 
-
-
-    .events-frontpage {
-        height: 250px;
-        padding: 2% 0% 0% 0%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .events-frontpage p {
-        font-size: 30px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding: 0% 14% 0% 14%;
-    }
-
-    p {
-        font-size: 30px;
-        margin: 5px;
-    }
-
-    .text {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        padding: 5% 0% 10% 0%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    footer {
-        padding-top: 5%;
-        padding-bottom: 2%;
-    }
-
-    footer p {
-        margin: 5px;
-        font-size: 18px;
-
-    }
-
-    .footer-content-left {
-        margin-left: 10%;
-    }
-
-    .footer-content-right {
-        margin-right: 10%;
-    }
-
-    .insta-img {
-        width: 100px; 
-        height: 100px;
-    
-    }
-
-
 @media (max-width: 1300px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .phone-nav {
+        margin-bottom: 1%;
+    }
 
     .topnav {
         flex-direction: column;
@@ -218,10 +184,6 @@ h4 {
         border-radius: 10px;
     }
 
-    .desktop-nav {
-        display: none;
-    }
-
     .dropbtn {
         padding: 25px 150px 25px 150px;
         background-color: rgba(44, 149, 171, 255);
@@ -230,45 +192,55 @@ h4 {
         font-size: 25px;
         border: none;
         cursor: pointer;
-        margin-bottom: 1%;
+        display: flex;
+        justify-content: center;
     }
 
     .phone-nav-content {
+        position: absolute;
+        z-index: 10;
         display: none;
         background-color: rgba(44, 149, 171, 255);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+        transform: translateX(-50%)
     }
 
     .phone-nav-content a {
         color: black;
         text-decoration: none;
         display: block;
-        padding: 2% 4%;
-    }
-
-    .phone-nav-content a:hover {
-        background-color: rgba(250, 247, 240, 255);
+        padding: 25px 120px;
     }
 
     .phone-nav:hover .phone-nav-content {
         display: inline-block;
-        width: 80%;
-        text-align: center;
         border-radius: 10px;
     }
 
     .phone-nav:hover .dropbtn {
         background-color: rgba(250, 247, 240, 255);
         color: rgba(44, 149, 171, 255);
+        transition: all 0.3s ease;
     }
 
+    /*Etusivun sisältö*/
     .hero {
         position: relative;
         width: 100vw;
         max-width: 100%;
-        height: 450px; /* sama kuin hero img */
+        height: 550px; /* sama kuin hero img */
         background-image: url(hero.jpg);
         background-size: cover;
         background-position: center;
+    }
+    .hero-teksti {
+        text-align: center;
+        top: 50%;
+
+        font-size: 40px;
+        color: rgba(250, 247, 240, 255);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 2px 2px 5px black, 1px 1px 5px black;
     }
 
     .hero h2 {
@@ -276,48 +248,23 @@ h4 {
         font-size: 40px;
         color: rgba(250, 247, 240, 255);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        border: solid;
     }
 
+    /*Heron jälkeinen osuus*/
     .events-frontpage {
-        align-items: center;
-        margin: auto;
-        display: inline-block;
+        margin: 0 5% !important;
         flex-direction: column;
-        text-align: center;
-    }
-
-    .text p {
-        font-size: 20px;
-        margin: 5px;
-    }
-
-    .text {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        padding: 1% 0% 1% 0%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        margin-bottom: 5%;
     }
 
     .events-frontpage p {
         font-size: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding: 0% 14% 0% 14%;
     }
 
-    .kuva {
-        text-align: center;
-    }
-
+    /*Jalkatila*/
     footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 5%;
-        padding-bottom: 2%;
+        flex-direction: column !important;
+        align-items: center !important;
+        min-height: max-content;
     }
 
     footer p {
@@ -326,73 +273,55 @@ h4 {
         margin: 5px;
     }
 
+    footer h4 {
+        text-align: center;
+    }
+
+    footer i {
+        text-align: center;
+    }
+
     footer a {
         font-size: 12px;
     }
-    
+
     .footer-content-left {
-        margin-left: 5%;
+        margin: 20px 0 30px 0 !important;
+        text-align: center;
     }
 
     .footer-content-right {
-        margin-right: 5%;
+        margin: 0 0 0 0 !important;
+        text-align: center !important;
     }
 
-    .insta-img {
-        width: 80px; 
-        height: 80px;
-    
+    .some-icons {
+        justify-content: center;
+        align-items: center;
     }
 }
-
-/*#region ETUSIVU PAGE LAYOUT */
-.events-frontpage a {
-    padding: 15px 40px 15px 40px;
-    text-align: center;
-    color: rgba(0, 29, 47, 255);
-    font-size: 260%;
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.events-frontpage a:hover {
-    background-color: rgba(148, 198, 208, 255);
-}
-
-/*#endregion */
 
 /*#region FOOTER PAGE LAYOUT */
-
 footer {
+    background-color: rgba(44, 149, 171, 255);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
-    color: rgba(250, 247, 240, 255);
+    padding-bottom: 4%;
+    padding-top: 5%;
+    block-size: auto;
+    height: 350px;
 }
 
 .footer-content-left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
-    font-size: 20px;
+    text-align: left;
     color: rgba(250, 247, 240, 255);
+    margin-left: 25%;
 }
-
-footer a {
-    color: rgba(250, 247, 240, 255);
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 3px 0;
-}
-
-footer a:hover {
-    color: rgba(44, 149, 171, 255);
-    border-radius: 10px;
-}
-
 
 .footer-content-center {
     display: flex;
@@ -402,18 +331,54 @@ footer a:hover {
     text-align: center;
 }
 
-
 .footer-content-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: right;
+    margin-right: 25%;
 }
 
+footer a {
+    color: rgba(250, 247, 240, 255);
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8px;
+    font-size: 22px;
+}
 
-/* Change color on hover */
-.footer-content-right a:hover {
-    background-color: rgba(148, 198, 208, 255);
+footer a:hover {
+    color: rgba(44, 149, 171, 255);
+    border-radius: 10px;
+    background-color: rgba(250, 247, 240, 255);
+}
+
+footer h4 {
+    font-size: 28px;
+    color: rgba(250, 247, 240, 255);
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.insta-img {
+    width: 50px;
+    height: 50px;
+}
+
+.insta-img:hover {
+    color: rgba(44, 149, 171, 255);
+    filter: invert(1);
+    transform: scale(1.15);
+    transition: transform 0.8s ease;
+}
+
+.some-icons {
+    display: flex;
+    flex-direction: row;
 }
 
 /*#endregion */
