@@ -1,17 +1,18 @@
 .kokotarina {
-    margin: 2% 15% ;
+    padding: 2% 15% 4% 15%;
     align-content: center;
 }
 
 @media (max-width: 1300px) {
 
     .kokotarina {
-        margin: 2% 5% 7% 5% !important;
+        padding: 6% 10% 8% 10% !important;
+        text-align: center !important;
     }
 
     .blokki {
         flex-direction: column !important;
-        padding: 0 1% 0 0 !important;
+        padding: 0 0 0 0 !important;
     }
 
     .kuva {

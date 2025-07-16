@@ -39,8 +39,9 @@ main {
 
 h1 {
     color: rgba(0, 29, 47, 255);
-    font-size: 50px;
+    font-size: 42px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 22px;
     margin-bottom: 20px !important;
 }
 
@@ -56,10 +57,16 @@ h2 {
     text-shadow: -1px -1px 5px black;
 }
 
+@font-face {
+    font-family: 'GG';
+    src: url('Lobster-Regular.ttf');
+    src: local('☺'), url('') format('ttf'), url('Lobster-Regular.ttf') format('truetype');
+}
+
 h3 {
     color: rgba(250, 247, 240, 255);
-    font-size: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 42px;
+    font-family: GG, sans-serif;
 }
 
 h5 {
@@ -291,7 +298,7 @@ p {
     }
 
     .footer-content-right {
-        margin: 0 0 0 0 !important;
+        margin: 0 0 5% 0 !important;
         text-align: center !important;
     }
 

@@ -2,7 +2,7 @@
 .valikoima {
     display: flex;
     flex-direction: column;
-    margin: 2% 15% 4% 15%;
+    padding: 2% 15% 4% 15%;
 }
 
 @media (max-width: 1300px) {
@@ -10,7 +10,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin: 2% 4% 7% 4% !important;
+        padding: 6% 10% 8% 10% !important;
     }
 
     .gallery {
