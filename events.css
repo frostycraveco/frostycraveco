@@ -19,6 +19,7 @@
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
+    justify-items: flex-start;
     min-width: max-content;
     max-width: min-content;
     transition: transform 0.5s ease; /* Smoothly adjusts size of surrounding blocks */

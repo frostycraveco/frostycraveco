@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -94,6 +95,7 @@ p {
     color: rgba(0, 29, 47, 255);
     font-size: 260%;
     text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .events-frontpage a:hover {
@@ -129,7 +131,7 @@ p {
         padding: 1.5% 2% 1.5% 2%;
         margin: 80px 0px 0px 0px;
         text-decoration: none;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         border-radius: 10px;
     }
 
@@ -144,18 +146,23 @@ p {
         position: relative;
         width: 100vw;
         max-width: 100%;
-        height: 600px; /* sama kuin hero img */
+        height: 80vh; /* sama kuin hero img */
         background-image: url(hero.jpg);
         background-size: cover;
         background-position: center;
         filter: brightness(110%);
+        
     }
 
     .hero-teksti {
+        transform: translate(45%, 55%);
+        inline-size: 28%;
+        overflow-wrap: break-word;
         text-align: center;
+        position: relative;
         font-size: 40px;
         color: rgba(250, 247, 240, 255);
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-shadow: 2px 2px 5px black, 1px 1px 5px black;
     }
 }
@@ -188,7 +195,7 @@ p {
     .topnav a {
         color: rgba(0, 29, 47, 255);
         text-decoration: none;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         border-radius: 10px;
     }
 
@@ -222,7 +229,7 @@ p {
         color: black;
         text-decoration: none;
         display: block;
-        padding: 25px 120px;
+        padding: 22px 100px;
     }
 
     .phone-nav:hover .phone-nav-content {
@@ -241,18 +248,20 @@ p {
         position: relative;
         width: 100vw;
         max-width: 100%;
-        height: 550px; /* sama kuin hero img */
+        height: 350px; /* Sama kuin hero img */
         background-image: url(hero.jpg);
         background-size: cover;
         background-position: center;
     }
     .hero-teksti {
+        transform: translate(0, 5%);
+        inline-size: 75vw;
+        overflow-wrap: break-word;
+        position: relative;
         text-align: center;
-        top: 50%;
-
         font-size: 25px;
         color: rgba(250, 247, 240, 255);
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-shadow: 2px 2px 5px black, 1px 1px 5px black;
     }
 
@@ -260,7 +269,7 @@ p {
         text-align: center;
         font-size: 40px;
         color: rgba(250, 247, 240, 255);
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     /*Heron jälkeinen osuus*/
@@ -355,7 +364,7 @@ footer {
 footer a {
     color: rgba(250, 247, 240, 255);
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 8px;
     font-size: 22px;
 }
